@@ -6,7 +6,10 @@ local_backend:
   #allowed_hosts: ['192.168.0.1']
 
 backend:
-  name: git-gateway
+  name: github
+  repo: mjpritchard/my-hinode-decapcms  # Path to your GitHub repository
+  # optional, defaults to master
+  branch: main
 
 media_folder: "assets/img/uploads"
 public_folder: "img/uploads"
